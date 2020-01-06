@@ -22,6 +22,8 @@
    
 8.) Clicking on the title or icon of a post opens a tab on a new page with details of that post.
 
-9.) The design is totally responsive and the side navigation bar hides into the three stripes icon.
+9.) The Downnload Counter also works fine.
 
- A live hosted version of my website is present here - " 
+10.) The design is totally responsive and the side navigation bar hides into the three stripes icon.
+
+ A live hosted version of my website is present here - "endgem.epizy.com" 
