@@ -1,0 +1,143 @@
+    /*//////////////////////////////////////////////////////////////////
+[ FONT ]*/
+
+
+    @font-face {
+        font-family: Poppins-Regular;
+        src: url('../fonts/poppins/Poppins-Regular.ttf');
+    }
+
+    @font-face {
+        font-family: Poppins-Bold;
+        src: url('../fonts/poppins/Poppins-Bold.ttf');
+    }
+
+    @font-face {
+        font-family: Poppins-Bold;
+        src: url('../fonts/poppins/Poppins-SemiBold.ttf');
+    }
+
+    @font-face {
+        font-family: Poppins-ExtraLight;
+        src: url('../fonts/poppins/Poppins-ExtraLight.ttf');
+    }
+
+    @font-face {
+        font-family: StarJedi;
+        src: url('../fonts/poppins/StarJedi.ttf');
+    }
+
+
+    /*//////////////////////////////////////////////////////////////////
+
+/*table*/
+
+    body {
+        /*    font-family: 'lato', sans-serif;*/
+        font-family: Poppins-Regular;
+    }
+
+    .container {
+        max-width: 1000px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    h2 {
+        font-size: 26px;
+        margin: 20px 0;
+        text-align: center;
+    }
+
+    h2 small {
+        font-size: 0.5em;
+    }
+
+    .responsive-table {
+        padding-left: 19%;
+
+    }
+
+    .responsive-table li {
+        border-radius: 12px;
+        padding: 25px 30px;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 25px;
+    }
+
+    .responsive-table .table-header {
+        background-color: #FFFFFF;
+        color: #fa4251;
+        font-size: 14px;
+        font-family: Poppins-Bold;
+        text-transform: uppercase;
+        letter-spacing: 0.03em;
+    }
+
+    .responsive-table .table-row {
+        background-color: #fefefa;
+        color: #222222;
+        font-family: Poppins-ExtraLight;
+        box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.2);
+    }
+
+    .responsive-table .col-1 {
+        flex-basis: 10%;
+    }
+
+    .responsive-table .col-2 {
+        flex-basis: 25%;
+    }
+
+    .responsive-table .col-3 {
+        flex-basis: 40%;
+        padding-right: 0.7%;
+    }
+
+    .responsive-table .col-4 {
+        flex-basis: 20%;
+    }
+
+    .responsive-table .col-5 {
+        flex-basis: 5%;
+    }
+
+    @media all and (max-width: 767px) {
+        .responsive-table {
+            padding-left: 0px;
+            padding-top: 50px;
+        }
+
+        .responsive-table .table-header {
+            display: none;
+        }
+
+        .responsive-table li {
+            display: block;
+        }
+
+        .responsive-table .col {
+            flex-basis: 100%;
+        }
+
+        .responsive-table .col {
+            display: flex;
+            padding: 10px 0;
+        }
+
+        .responsive-table .col-3 {
+
+            padding-right: 0px;
+        }
+
+        .responsive-table .col:before {
+            color: #6c7a89;
+            padding-right: 10px;
+            content: attr(data-label);
+            flex-basis: 50%;
+            text-align: left;
+        }
+    }
