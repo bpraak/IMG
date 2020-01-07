@@ -1,5 +1,7 @@
 # IMG
  EndGem
+ 
+ Since the website contains CDNs please use on a system with internet for full functionality.
 
 1.) The website can be run on a localhost(XAMPP or any other server). If using a different host, user, password or database name please change the corrosponding details in the file "./include/db.php".
 
