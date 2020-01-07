@@ -65,7 +65,7 @@ if($_SESSION['enrol'] != '' &&  $_SESSION['user_id'] != '' && $_SESSION['user_na
             height: 85vh;
         }
 
-        .noscroll {
+        #noscroll {
             overflow: hidden;
         }
 
@@ -186,6 +186,21 @@ if($_SESSION['enrol'] != '' &&  $_SESSION['user_id'] != '' && $_SESSION['user_na
             color: #006884;
             font-family: Poppins-regular;
         }
+        
+        
+        
+        #scrollingclass {
+        overflow-y:scroll;
+        }
+        /* Hide scrollbar for Chrome, Safari and Opera */
+        #scrollingclass::-webkit-scrollbar {
+        display: none;
+        }
+
+        /* Hide scrollbar for IE and Edge */
+        #scrollingclass {
+        -ms-overflow-style: none;
+        }
 
     </style>
 
@@ -194,7 +209,7 @@ if($_SESSION['enrol'] != '' &&  $_SESSION['user_id'] != '' && $_SESSION['user_na
 
 
 <body class="cbp-spmenu-push">
-    <div class="noscroll">
+    <div id="noscroll">
         <div class="main-content">
             <!-- header-starts -->
             <?php include './include/header.php';?>
@@ -305,7 +320,7 @@ if($_SESSION['enrol'] != '' &&  $_SESSION['user_id'] != '' && $_SESSION['user_na
             {
                 ?>
                 <div class="row">
-                    <div class="col-sm-10" style="overflow-y:scroll;">
+                    <div class="col-sm-10" id="scrollingclass">
 
                         <?php
                         $id=$_GET['sid'];
