@@ -428,7 +428,7 @@ if($_SESSION['enrol'] != '' &&  $_SESSION['user_id'] != '' && $_SESSION['user_na
                         Welcome To EndGem <br>
                     </div>
                     <div id="select">
-                        Select Branch and subject <br>form side navigation bar.
+                        Select Branch and subject <br>from side navigation bar.
                     </div>
                 </center>
                 <?php
